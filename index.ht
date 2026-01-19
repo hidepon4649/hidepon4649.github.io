@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>hidepon4649</title>
+  <style>
+    body { font-family: system-ui, -apple-system, "Helvetica Neue", Arial; max-width: 800px; margin: 3rem auto; padding: 0 1rem; line-height: 1.6; }
+    header { border-bottom: 1px solid #eee; padding-bottom: 1rem; margin-bottom: 1rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ようこそ — hidepon4649</h1>
+    <p>近日公開予定！</p>
+  </header>
+
+  <main>
+    <p>ポートフォリオ一覧</p>
+    <ul>
+      <li>リンク１</li>
+      <li>リンク２</li>
+    </ul>
+  </main>
+
+  <footer>
+    <hr />
+    <p>作成日: 2026-01-19</p>
+  </footer>
+</body>
+</html>
