@@ -4,22 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>hidepon4649</title>
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap 5.3.3 CSS -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+5hb7ie1z6+4eFf5r5g5r5g5r5g5r5g5r5g5r5"
-      crossorigin="anonymous"
     />
+    <style>
+      :root {
+        --brand-green: #28a745;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      header,
+      footer,
+      .navbar {
+        background-color: var(--brand-green) !important;
+      }
+      main {
+        flex: 1;
+      }
+      .nav-link {
+        transition: opacity 0.3s;
+      }
+      .nav-link:hover {
+        opacity: 0.8;
+      }
+    </style>
   </head>
   <body>
-    <header class="bg-primary text-white text-center py-4">
-      <h1>ようこそ！hidepon4649</h1>
+    <!-- ヘッダー -->
+    <header class="text-center py-4 text-white">
+      <h1 class="fw-bold">ようこそ！hidepon4649</h1>
     </header>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">メニュー</a>
+    <!-- ナビゲーションバー (md以上で横並び、未満でハンバーガー) -->
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">メニュー</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -32,7 +56,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav ms-auto text-center">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">トップ</a>
             </li>
@@ -50,23 +74,29 @@
       </div>
     </nav>
 
-    <main class="container my-5">
-      <div class="row justify-content-center">
-        <div class="col-md-8 col-lg-6 text-center">
-          <p class="fs-4">工事中。近日公開予定</p>
+    <!-- メインコンテンツ -->
+    <main
+      class="container my-5 d-flex align-items-center justify-content-center"
+    >
+      <div class="text-center">
+        <div class="p-5 bg-light rounded-3 shadow-sm">
+          <p class="fs-2 fw-bold text-muted">工事中</p>
+          <p class="fs-5 text-secondary">近日公開予定。完成をお楽しみに！</p>
+          <div class="spinner-border text-success mt-3" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
         </div>
       </div>
     </main>
 
-    <footer class="bg-dark text-white text-center py-3">
-      <p class="mb-0">&copy; 2026 hidepon4649. All rights reserved.</p>
+    <!-- フッター -->
+    <footer class="text-center py-3 text-white shadow-lg mt-auto">
+      <div class="container">
+        <p class="mb-0">&copy; 2026 hidepon4649. All rights reserved.</p>
+      </div>
     </footer>
 
-    <!-- Bootstrap Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ENjdO4Dr2bkBIFxQpeoA7FZrFf5srA6Kp9e9ABF+Z5i1F1p3e1F1p3e1F1p3e1F1p3"
-      crossorigin="anonymous"
-    ></script>
+    <!-- Bootstrap 5.3.3 Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
