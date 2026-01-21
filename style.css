@@ -1,0 +1,29 @@
+:root {
+  --brand-green: teal;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+header,
+footer,
+.navbar {
+  background-color: var(--brand-green) !important;
+}
+main {
+  flex: 1;
+}
+.nav-link {
+  transition: opacity 0.3s;
+}
+.nav-link:hover {
+  opacity: 1;
+  background-color: white;
+  color: var(--brand-green) !important;
+  transform: translateY(-2px);
+  border-radius: 0.5rem;
+}
+.nav-item {
+  margin: 0 0.5rem;
+}
